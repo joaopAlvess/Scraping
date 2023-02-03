@@ -8,6 +8,7 @@ DESAFIO: Extração do diário oficial
 O desafio consiste em extrair informações do Diário Oficial da União (DOU), disponível no link https://www.in.gov.br/leiturajornal, com os seguintes parâmetros:
 secao: string que pode possuir somente um dos seguintes valores: dou1, dou2, dou3
 data: string de data no formato DD-MM-AAAA
+
 Na página da imprensa (HTML), existe um script do tipo application/json com os dados de cada seção. Estes dados incluem o objeto jsonArray com o campo urlTitle. Cada seção do DOU pode ser acessada a partir da concatenação do link https://www.in.gov.br/en/web/dou/-/ com urlTitle.
 
 O projeto depende das bibliotecas cfscrape (para lidar com o Cloudflare) e BeautifulSoup (para parsear o HTML). É necessário instalá-las antes de executar o projeto.
